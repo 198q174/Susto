@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shit na Mod</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #susto {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 10;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Бори¡ Алексей </h1>
+    <div id="susto">
+        <img src="https://vignette.wikia.nocookie.net/creepypasta/images/2/21/Creepy_Fotoface.jpg/revision/latest?cb=20150211183543&path-prefix=de" alt="Creppysta">
+        <audio id="audio" src="https://cdn.pixabay.com/download/audio/2024/05/04/audio_c5c1b3ec59.mp3?filename=jumpscare-2-206591.mp3" preload="auto"></audio>
+    </div>
+
+    <script>
+        window.onload = function() {
+            setTimeout(function() {
+                document.getElementById('susto').style.display = 'block';
+                document.getElementById('audio').play();
+            }, 3000); // Atraso de 2 segundos antes do susto
+        };
+    </script>
+</body>
+</html>
